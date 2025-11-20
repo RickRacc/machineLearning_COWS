@@ -1,0 +1,97 @@
+Description
+The dataset for this ML competition contains information on 250,000 cattle, and details about their milk production. 
+Your task is to predict milk yield based on a structured dataset of features 
+including things like age, weight, feed intake, water consumption, weather, vaccination status, and more.
+
+The dataset has been split into training and test sets for model development and evaluation. 
+The training set contains 220,000 records and the test set contains 30,000 records.
+
+
+
+
+Evaluation
+Public and Private Test Sets: 
+The test set contains 30,000 records.
+ Half of the test set will be used for the public leaderboard rankings. 
+ When you submit predictions, only half of them will be used to determine your public RMSE score. 
+ The other half will be used for the private test set. 
+ Your RMSE on the private test set will be used for your final ranking and grading. 
+ This is necessary to prevent teams from overfitting their models to the public leaderboard scores, 
+ rather than learning to make predictions that generalize broadly. 
+ The private test set evaluates whether your model truly works on unseen data.
+
+Evaluation Metric: 
+Submissions will be evaluated using the Root Mean Squared Error (RMSE) metric, 
+a commonly used metric to measure the difference between predicted values and actual values in regression problems.
+RMSE is the square root of the average of the squared differences between predicted and actual values. 
+It gives a sense of how far, on average, predictions are from the true values, penalizing larger errors more heavily than smaller ones.
+
+
+
+
+NOTE - the leaderboard performance is 10% of the total score
+
+the rest 90% is as follows -
+
+Jupyter Notebook (90% of the grade):
+You will not be graded solely on your model’s performance. More important for this project is your methodology. 
+What is the process you used, and what things did you do to try to improve the performance of your model(s), 
+even if those things maybe did not ultimately move you up the leaderboard. 
+
+The report should be clear, well-organized, and effectively communicate the “story” of your modeling - 
+what you did, why you did it, whether or not it worked, and what you tried next. 
+It should display your entire process, not just the final model. 
+It should convey all of the effort you put into the project. 
+
+Report will be evaluated based on the following:
+
+Data Cleaning (20 points)
+How did you handle missing values, various data types, outliers, and other data quality issues? 
+Was there thoughtful justification of data cleaning choices based on exploratory data analysis, model performance improvements, or domain knowledge? 
+Does the code correctly implement the described techniques? 
+
+Data Exploration (20 points)
+Did you thoroughly examine the dataset to understand its structure, distributions, and key relationships? 
+Did you use data exploration to  identify data quality issues? 
+Was it used to gain a better understanding of the dataset before building predictive models? 
+Did thoughtful data exploration help guide feature selection, engineering, and modeling decisions? 
+
+Feature Engineering (20 points)
+Did you experiment with engineering features in a way that could potentially improve model results? 
+Did you apply feature transformation, feature creation, feature selection, or useful/logical dimensionality reduction that could potentially enhance predictive performance? 
+Was there thoughtful justification of feature engineering choices based on exploratory data analysis, model performance improvements, or domain knowledge? 
+Does the code correctly implement the described techniques? 
+
+Modeling Approach (20 points)
+Were correct machine learning and data modeling techniques used? 
+Was effort put into making iterative improvements through model comparisons, experimentation, hyperparameter tuning/regularization, ensembling, or any other ML techniques. 
+Are models compared in a correct and reasonable way? Does the code correctly implement the machine learning techniques? 
+
+Quality & Clarity of Code and Notebook (20 points)
+Is the Jupyter Notebook, including the code itself, well-organized and well-written? 
+Does it provide a clear explanation of the team’s process and efforts? 
+Does it effectively communicate the team’s project and process? 
+Are Markdown cells used to explain reasoning and process? 
+Is the code clean, commented, and easy to follow? Can someone else run the notebook from start to finish without errors? 
+Are there repeated blocks of code that should be cleaned up/consolidated? 
+Does code demonstrate thoughtful and maintainable coding practices? 
+Can reviewers clearly understand your workflow by reading through your code and notebook?
+
+
+
+You may use generative AI for this project. 
+Do not leave repetitive copy/pasted AI code blocks in your final submission. 
+Clean up your code and use functions or Jupyter Notebook cells to eliminate repetitive code. 
+
+
+NOTE - 
+You are limited to only the ML techniques we have covered in this class. 
+Use the Python libraries (i.e. scikit-learn, etc.). 
+I am ok with you using any Python or ML libraries you want, so long as it is concepts we covered or discussed in this class.
+
+I am ok with you using other neural net libraries if you want (such as TensorFlow, PyTorch, Keras, etc.), 
+so long as you are only implementing a feed-forward multi-layer perceptron.
+
+We covered boosting. I am ok with you using any/all types of boosting. 
+When in doubt, ask me first. 
+
